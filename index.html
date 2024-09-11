@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personlig hemsida och CV för en sommelier-konsult">
+    <title>Sommelier Konsult</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Välkommen till Min Sommelierverksamhet</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">Om Mig</a></li>
+                <li><a href="#cv">CV</a></li>
+                <li><a href="#services">Tjänster</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>Om Mig</h2>
+        <p>Jag är en passionerad sommelier med över 10 års erfarenhet av vinprovningar och konsulttjänster. Mitt fokus är att hjälpa restauranger och privata kunder att upptäcka fantastiska viner och bygga hållbara vinlistor.</p>
+    </section>
+
+    <section id="cv">
+        <h2>CV</h2>
+        <ul>
+            <li><strong>Utbildning:</strong> Sommelierexamen från Vinkällan 2012</li>
+            <li><strong>Erfarenhet:</strong> Vinprovningar, restaurangkonsultation och vinkällare-management</li>
+            <li><strong>Certifieringar:</strong> WSET Level 3, Court of Master Sommeliers</li>
+            <li><strong>Språk:</strong> Svenska, Engelska, Franska</li>
+        </ul>
+        <button onclick="toggleCV()">Visa mer</button>
+        <div id="extra-cv" style="display: none;">
+            <h3>Ytterligare erfarenheter</h3>
+            <p>Jag har arbetat med exklusiva vingårdar och varit en del av sommelierteamet på flertalet Michelin-restauranger. Under åren har jag utvecklat starka relationer med vinproducenter och importörer världen över.</p>
+        </div>
+    </section>
+
+    <section id="services">
+        <h2>Tjänster</h2>
+        <p>Som sommelier erbjuder jag följande tjänster:</p>
+        <ul>
+            <li>Personliga och företagsanpassade vinprovningar</li>
+            <li>Konsultation för restaurangers vinlistor</li>
+            <li>Privata vinrådgivning och samlingar</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Kontakt</h2>
+        <p>För att boka en konsultation eller vinprovning, vänligen fyll i formuläret nedan:</p>
+        <form id="contactForm">
+            <label for="name">Namn:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">E-post:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Meddelande:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Skicka</button>
+        </form>
+        <div id="formResponse"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Sommelier Konsult. Alla rättigheter förbehållna.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
